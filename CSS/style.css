@@ -1,0 +1,164 @@
+#wrapper{
+    background-image: url(../images/IMG_1814.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-size: cover;
+}
+body {
+    font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
+    color: white;
+}
+/*スライダー*/
+#wrapper .slider {
+    position: relative;
+    width: 640px;
+    margin: 0 auto 20px;
+    padding: 0 20px;
+}
+
+    #wrapper .slider .slider-inner {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 480px;
+        list-style-type: none;
+    }
+
+    #wrapper .slider .slider-inner li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 600ms;
+        pointer-events: none
+    }
+
+    #wrapper .slider .slider-inner li.show {
+        opacity: 1;
+        z-index: 1;
+        pointer-events: auto
+    }
+
+    #wrapper .slider .slider-inner li img {
+        width: 95%;
+        height: auto
+    }
+
+    #wrapper .slider li:hover{
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+
+    #wrapper .slider .arrow {        
+        position: absolute;
+        top: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        background: #000;
+        color: #fff;
+        line-height: 40px;
+        padding: 5px;
+        -webkit-transition: opacity 400ms;
+        transition: opacity 400ms;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #wrapper .slider .arrow:hover {
+        opacity: .7;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"
+    }
+
+    #wrapper .slider .arrow#arrow-prev {
+        left: 0!important;
+        -webkit-transform: translate(-100%,-50%)!important;
+        transform: translate(-100%,-50%)!important
+    }
+
+    #wrapper .slider .arrow#arrow-next {
+        left: auto!important;
+        right: 0!important;
+        -webkit-transform: translate(100%,-50%)!important;
+        transform: translate(100%,-50%)!important
+    }
+
+/*スイーツエリア*/
+.recommend{
+    position: relative;
+    width: 640px;
+    margin: 0 auto 20px;
+    padding: 0 20px;
+}
+
+/*コンテンツエリア*/
+#wrapper .contents section {
+    position: relative;
+    width: 100%;
+    padding-bottom: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment: fixed
+}
+    #wrapper .contents section#section01 {
+        height: 100vh;
+    }
+#wrapper .contents section h1,
+#wrapper .contents section h2 {
+    text-align: center;
+}
+#wrapper .contents section h2 {
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+#wrapper .contents section a {
+    color: #fff
+}
+#wrapper header{
+    display: flex;
+    justify-content: space-around;
+}
+#wrapper header .item{
+    font-size: 20px;
+}
+
+/*map*/
+.map{
+    position: relative;
+    width: 640px;
+    margin:0 auto 20px;
+    padding: 0 20px;
+}
+
+/*他*/
+#wrapper .contents section#section01 .section-inner {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%)
+}
+
+#section02 {
+}
+    #section01 p {
+        text-align: center;
+    }
+
+    #section02 p {
+        text-align: center;
+    }
+    #section04 p {
+        text-align: center;
+    }
+
